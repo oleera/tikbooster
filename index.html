@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg bg-primary" data-bs-th>
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><i class="bi bi-tiktok"></i> TikBooster</a>
+            <a class="navbar-brand text-white" href="/"><i class="bi bi-tiktok"></i> TikBooster</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
                 aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -27,14 +27,14 @@
             <div class="collapse navbar-collapse" id="navbarColor01">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link text-white" href="#">About</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link text-white" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -53,7 +53,7 @@
                     <!-- Header text content-->
                     <div class="text-center text-xxl-start">
                         <div class="fs-3 fw-light text-secondary">We help new/budding TikToker grow.</div>
-                        <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">
+                        <h1 class="display-3 fw-bolder mb-5"><span class="text-secondary d-inline">
                                 <i class="bi bi-rocket-takeoff"></i>
                                 Boost your
                                 TikTok <i class="bi bi-tiktok"></i></span></h1>
@@ -163,7 +163,7 @@
                             <div>
                                 <label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
                                 <input type="email" name="email" class="form-control" id="exampleInputEmail1" required
-                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                    aria-describedby="emailHelp" placeholder="Enter your email">
                             </div>
                             <div>
                                 <label for="exampleInputEmail2" class="form-label mt-4">TikTok username</label>
@@ -178,6 +178,12 @@
                                     id="exampleInputEmail3" aria-describedby="emailHelp" rows=5 cols=50 maxlength=250
                                     placeholder="Tell us about the post which you want to boost. for e.g. latest post"
                                     required></textarea>
+                            </div>
+                            
+                            <div>
+                                <label for="exampleInputEmail3" class="form-label mt-4">Discount Code (if available)</label>
+                                <input type="text" name="discount-code" class="form-control" id="exampleInputEmail3"
+                                    aria-describedby="emailHelp" placeholder="Enter Discount Code">
                             </div>
 
                             <div>
@@ -203,6 +209,13 @@
                                 </select>
                             </div>
                         </fieldset>
+
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://tikbooster.onrender.com/thanks.html">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_template" value="table">
+
+
                         <button type="submit" class="btn btn-primary mt-3">Submit</button>
 
                     </form>
@@ -213,7 +226,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <section class="bg-light py-4 py-md-5 py-xl-8 border-top border-light">
             <div class="container overflow-hidden">
                 <div class="row gy-4 gy-lg-0 justify-content-xl-between">
